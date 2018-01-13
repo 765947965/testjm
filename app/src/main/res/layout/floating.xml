@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#55fffff1"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/SeekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:max="20"
+        android:progress="2"/>
+
+    <SeekBar
+        android:id="@+id/SeekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:max="20"
+        android:progress="17"/>
+
+    <Button
+        android:id="@+id/mButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="开始"
+        android:textColor="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"/>
+
+        <SeekBar
+            android:id="@+id/SeekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/cut"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="0"/>
+
+        <SeekBar
+            android:id="@+id/SeekBar4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/SeekBar3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:progress="0"/>
+
+        <com.floatingwindow.DisView
+            android:id="@+id/mDisView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>
